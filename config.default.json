@@ -1,0 +1,15 @@
+{
+    "create": [{
+            "domain": "DomainA.com",
+            "directory": "/Directory/A"
+        },
+        {
+            "domain": "DomainB.org",
+            "directory": "/Directory/B"
+        }
+    ],
+    "request": [
+        "DomainA.com",
+        "DomainB.org"
+    ]
+}
