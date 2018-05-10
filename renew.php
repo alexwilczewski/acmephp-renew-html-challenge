@@ -54,7 +54,7 @@ function parseAuthorizeOutput($output) {
 function writeChallengeFile($domainDirectory, $file, $contents) {
     $challengeDirectory = sprintf('%s/.well-known/acme-challenge/', rtrim($domainDirectory, '/'));
     if (false === file_exists($challengeDirectory)) {
-        mkdir($challengeDirectory, 0440, true);
+        mkdir($challengeDirectory, 0660, true);
     }
     $filePath = sprintf('%s/%s', rtrim($challengeDirectory, '/'), $file);
     file_put_contents($filePath, $contents);
